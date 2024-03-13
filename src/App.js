@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { nanoid } from 'nanoid';
 
 function App() {
-	const [page, setPage] = useState('questionsPage');
+	const [page, setPage] = useState('startingPage');
 	const [questions, setQuestions] = useState([]);
 	const [questionsAndAnswers, setQuestionsAndAnswers] = useState([]);
 	const [showAnswers, setShowAnswers] = useState(false);
@@ -83,9 +83,11 @@ function App() {
 		countAllCorrectAnswers(notAllAnswered);
 
 		if (showAnswers) {
-			setQuestions([]);
-			setCountCorrectAnswers(0);
-			setShowAnswers(false);
+			setTimeout(() => {
+				setQuestions([]);
+				setCountCorrectAnswers(0);
+				setShowAnswers(false);
+			}, 500);
 		}
 	};
 
