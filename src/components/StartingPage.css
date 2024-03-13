@@ -1,0 +1,33 @@
+.starting-page-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin-bottom: 1rem;
+	font-size: 6rem;
+}
+
+.subtitle {
+	font-size: 2.5rem;
+	padding: 0.5rem;
+}
+
+.start-btn {
+	margin-top: 2.5rem;
+	padding: 1.5rem 7rem;
+	font-size: 2rem;
+	font-family: 'Karla';
+	border: none;
+	border-radius: 10px;
+	background-color: #4d5b9e;
+	color: #f5f7fb;
+	cursor: pointer;
+}
+
+.start-btn:hover {
+	background-color: #6470ad;
+}

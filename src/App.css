@@ -1,38 +1,37 @@
 .App {
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.check-answers-play-again-btn {
+	margin-top: 2.5rem;
+	padding: 1.5rem 7rem;
+	font-size: 2rem;
+	font-family: 'Karla';
+	border: transparent;
+	border-radius: 15px;
+	background-color: #4d5b9e;
+	color: #f5f7fb;
+	cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.check-answers-play-again-btn:hover {
+	background-color: #373f6e;
+	color: #f5f7fb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.answers-warning, .answers-info {
+	margin-top: 2rem;
+	font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.answers-warning {
+	color: rgb(255, 8, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answers-info {
+	font-weight: 600;
+	color: #293264;
 }
